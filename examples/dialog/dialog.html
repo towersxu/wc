@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../../components/Dialog.js"></script>
+  <style>
+    .st {
+      width: 100px;
+      height: 100px;
+      background: red;
+    }
+    .in {
+      width: 30px;
+      height: 30px;
+      overflow: hidden;
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <button id="open">打开</button>
+  <div class="in">
+    <wc-dialog id="js-wc-dialog">
+      <div slot="content">
+        <input type="text" value="你好" id="js-value" />
+        <div class="st">
+          xxxx
+        </div>
+      </div>
+    </wc-dialog>
+  </div>
+  <script src="./dialog-main.js"></script>
+</body>
+</html>
