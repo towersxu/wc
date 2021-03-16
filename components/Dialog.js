@@ -67,7 +67,6 @@ class WcDialog extends HTMLElement {
     }
   }
   connectedCallback() {
-    console.log(4);
     this.setRootStyle({
       position: 'absolute',
       zIndex: 999,

@@ -12,6 +12,7 @@
         <button @click="closeDialog">取消</button>
       </div>
     </wc-dialog>
+    <my-element></my-element>
   </div>
 </template>
 
