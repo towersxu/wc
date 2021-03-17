@@ -4,19 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    .ss {
+      margin-left: 300px;
+    }
+    li {
+      list-style: none;
+    }
+    li:hover {
+      color:tomato;
+      cursor: pointer;
+    }
+    body {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
 </head>
 <body>
-  <script src="../../components/Dropdown.js"></script>
+  <script type="module" src="../../components/Dropdown.js"></script>
   <wc-dropdown trigger="hover">
-    <button>选择请求</button>
+    <button class="ss">选择请求</button>
     <div slot="dropdown">
-      <p>1</p>
-      <p>2</p>
-      <p>3</p>
-      <p>4</p>
+      <ul>
+        <li>苹果</li>
+        <li>桔子</li>
+        <li>栗子</li>
+        <li>李子</li>
+        <li>梨子</li>
+      </ul>
     </div>
   </wc-dropdown>
-  <p>11</p>
-
+  <wc-dropdown trigger="click">
+    <button>春天花会开</button>
+    <div slot="dropdown">
+      <div>鸟儿自由自在</div>
+    </div>
+  </wc-dropdown>
 </body>
 </html>
